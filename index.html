@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>2048 游戏</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>2048 游戏</h1>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="Game2048.js"></script>
+    <script src="Game2048UI.js"></script>
+    <script>
+        // 初始化游戏
+        const game = new Game2048();
+        const ui = new Game2048UI(game);
+        document.getElementById('gameContainer').appendChild(ui);
+    </script>
+</body>
+</html>
