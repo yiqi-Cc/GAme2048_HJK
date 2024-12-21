@@ -82,7 +82,7 @@ class Game2048UI extends HTMLElement {
         }
         this.render();
         if (this.game.isGameOver()) {
-            alert('Game Over!');
+            alert('游戏结束了!');
         }
     }
     render() {
